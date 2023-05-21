@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/layout';
 import Home from './pages/home';
+import Category from "./pages/categorys";
 import './App.scss';
 
 function App() {
@@ -11,9 +12,10 @@ function App() {
         <Layout>
           <Routes>
             <Route path='/' element={ <Home/>} />
+            <Route path="/categorys" element={ <Category/>} />
           </Routes>
         </Layout>
-       </div>
+       </div> 
     </div>
   );
 }
